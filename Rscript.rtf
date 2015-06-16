@@ -1,0 +1,186 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq0\fcharset128 Helvetica{\*\falt Arial};}{\f6\froman\fprq0\fcharset128 AndaleMono;}{\f7\fnil\fprq2\fcharset0 Droid Sans Fallback;}{\f8\fnil\fprq2\fcharset0 FreeSans;}{\f9\fswiss\fprq0\fcharset128 FreeSans;}}
+{\colortbl;\red0\green0\blue0;\red47\green255\blue18;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033 Normal;}
+{\s15\sbasedon0\snext16\sb240\sa120\keepn\dbch\af7\dbch\af8\afs28\loch\f4\fs28 Heading;}
+{\s16\sbasedon0\snext16\sl288\slmult1\sb0\sa140 Text Body;}
+{\s17\sbasedon16\snext17\sl288\slmult1\sb0\sa140\dbch\af9 List;}
+{\s18\sbasedon0\snext18\sb120\sa120\noline\i\dbch\af9\afs24\ai\fs24 Caption;}
+{\s19\sbasedon0\snext19\noline\dbch\af9 Index;}
+}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\revtim\yr0\mo0\dy0\hr0\min0}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern67241730}}\deftab720
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\pgdscnxt0 Default Style;}}
+\formshade{\*\pgdscno0}\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+initial.dir<-getwd()}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+setwd(initial.dir)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+library}{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+(mini)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+sink(\uc2 \u8220\'81\'67ACC_R_output.out")\uc1 }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+path <- "/data/nrnb01_nobackup/agross/TCGA_methylation/ACCFOLDER/jhu-usc.edu_ACC.HumanMethylation450.Level_1.1.0.0/"}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+mapping <- \uc2 \u8220\'81\'67/data/nrnb01_nobackup/agross/TCGA_methylation/ACCFOLDER/jhu-usc.edu_ACC.HumanMethylation450.aux.1.0.0/ACC.mappings.csv\u8220\'81\'67\uc1 }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+targets <- read.csv(mapping, as.is = TRUE)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+targets$barcode <- file.path(path, targets$barcode)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+rgset <- read.450k(targets$barcode, verbose = TRUE)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+pData(rgset) <- targets}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+dim(getRed(rgset))}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+dim(getGreen(rgset))}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+mset <- preprocessIllumina(rgset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+dim(getBeta(mset, type=\uc2 \u8220\'81\'67Illumina\u8221\'81\'68))\uc1 }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+sex <- getSex(mset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+plotSex(sex)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+plot(as.matrix(getQC(mset)))}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+#preprocessing using Swan or Funnorm}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+Mset.swan <- preprocessSWAN(rgset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+gset.funnorm <- preprocessFunnorm(rgset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+#show stuff (optional)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf1\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f5
+head(getMeth(mSet)[,1:3])}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+ratioSet <- ratioConvert(mSet, what = \uc2 \u8220\'81\'67both\u8221\'81\'68, keepCN =TRUE)\uc1 }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+gset <- mapToGenome(ratioSet)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+beta <- getBeta(gset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+m<- getM(gset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+cn <- getCN(gset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+sampleNames <- sampleNames(gset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+probeNames <- featureNames(gset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+pheno<- pData(gset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+gr<- granges(gset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+#annotation}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+annotation <- getAnnotation(gset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+names(annotation)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+islands <- getIslandStatus(get)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+head(islands)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+probeTy}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+pe <- getProbeType(gset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+head(probeType)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+#Remove SNPS and Cross Reactive Probes}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+snps <- getSnpInfo(gset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+gset <- addSnpInfo(gset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+gset <- dropLociWithSnps(gset, snps=c(\uc2 \u8220\'81\'67SBE\u8221\'81\'68,\u8221\'81\'68CpG\u8221\'81\'68), maf=0)\uc1 }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+gset <- dropCrossReactiveProbes(gset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+#Batch Correction (can include later for downstream analysis) (OPTIONAL)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+require(sva) }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+mval <- getM(gset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+pheno <- pData(gset)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+mod <- model.matrix(~as.factor(status), data=pheno)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+mod0 <- model.matrix(~1, data=pheno)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+sva.results <- sva(mval, mod, mod0)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+#find dmps}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+beta <- getBeta(gset.funnorm)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+age <- pData(gset.funnorm)$age}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+dmp <- dmpFinder(beta, pheno=age, type=\uc2 \u8220\'81\'67continuous\u8221\'81\'68)\uc1 }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\fs26\loch\f5
+ }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+#find dmrs}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+pheno <- pData(gset.funnorm)$status}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+designMatrix <- model.matrix(~ pheno)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+#do this then if bumps is over 30,000 increase cutoff to reduce bump so then B to 1000 at end}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+dmrs <- bumphunter(gset.funnorm, design = designMatrix, cutoff = 0.2, B=0, type=\uc2 \u8220\'81\'67Beta\u8221\'81\'68)\uc1 }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+sink()}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+detach("package:minfi\uc2 \u8221\'81\'68)\uc1 }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+setwd(initial.dir)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+****}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+use link below for mini after using format from other internet place that I used for the beginning, so starting at mset::}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+http://master.bioconductor.org/help/course-materials/2014/BioC2014/minfi_BioC2014.pdf}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\cf1\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs26\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf2\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f6
+for i in *.tar.gz; do tar xvzf $i -C ~/Documents/IdekerLab; done}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\cf2\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f6
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720{\cf2\expnd0\expndtw0\kerning1\rtlch \ltrch\loch\fs24\loch\f6
+GBM, LAML, LGG all are bad, kinda\uc2 \u8230\'81\'63\uc1 }
+\par }
